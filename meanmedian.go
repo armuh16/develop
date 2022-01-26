@@ -34,10 +34,10 @@ func m() {
 	mean := sum / float64(len(inp))
 	i := 0
 	median := 0.0
-	if len(inp)%2 == 0 { // genap
+	if len(inp)%2 == 0 { // even
 		j := len(inp) / 2
 		median = (inp[j].Number + inp[j-1].Number) / 2.0
-	} else { // ganjil
+	} else { // odd
 		i = len(inp) / 2
 		median = inp[i].Number
 	}
@@ -50,5 +50,4 @@ func m() {
 	fmt.Println(mean)
 	fmt.Println(median)
 	fmt.Println(string(r))
-
 }
